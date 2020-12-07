@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jboss.jira.plugin</groupId>
   <artifactId>build-gadgets</artifactId>
-  <version>1.9</version>
+  <version>1.10</version>
   <packaging>atlassian-plugin</packaging>
 
   <name>Gadget to show Jenkins/Hudson build status</name>
@@ -24,14 +24,20 @@
       <id>velias</id>
       <email>velias@redhat.com</email>
     </developer>
+    <developer>
+      <name>Anupam Singh Deo</name>
+      <organization>Red Hat</organization>
+      <id>asinghde</id>
+      <email>asinghde@redhat.com</email>
+    </developer>
   </developers>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jira.version>5.1</jira.version>
-    <jira.data.version>5.1</jira.data.version>
-    <java.version>1.7</java.version>
-    <atlassian.plugin.version>3.1.1</atlassian.plugin.version>
+    <jira.version>8.13.1</jira.version>
+    <jira.data.version>8.13.1</jira.data.version>
+    <java.version>1.8</java.version>
+    <atlassian.plugin.version>6.3.7</atlassian.plugin.version>
   </properties>
   
   <build>
@@ -68,7 +74,7 @@
                   <pluginExecutionFilter>
                     <groupId>com.atlassian.maven.plugins</groupId>
                     <artifactId>maven-jira-plugin</artifactId>
-                    <versionRange>[3.1.1,)</versionRange>
+                    <versionRange>[5.2.2,)</versionRange>
                     <goals>
                       <goal>copy-bundled-dependencies</goal>
                       <goal>filter-plugin-descriptor</goal>
